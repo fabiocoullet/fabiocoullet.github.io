@@ -2,438 +2,62 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>MEDIALIMEN CONSULTING | Agricultural, Livestock & Agribusiness Advisory</title>
 <meta name="description" content="Independent agricultural, livestock and agribusiness advisory for producers, management teams, agricultural companies and investors.">
-<meta name="theme-color" content="#081D33">
+<meta name="theme-color" content="#18324A">
 <link rel="preconnect" href="https://images.pexels.com">
 <style>
-:root{
-  --navy:#081D33;--navy2:#0D2A44;--copper:#B67843;--copper2:#D59D6A;
-  --stone:#F3EFE8;--ivory:#FBF9F5;--ink:#1A2C3E;--muted:#68747D;
-  --line:rgba(26,44,62,.15);--white:#fff;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{margin:0;background:var(--ivory);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.55}
-a{color:inherit;text-decoration:none}
-img{display:block;max-width:100%}
-.wrap{width:min(1220px,calc(100% - 56px));margin:auto}
-.serif,h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400}
-.eyebrow{font-size:10px;letter-spacing:.19em;text-transform:uppercase;font-weight:700;color:var(--copper);display:flex;align-items:center;gap:12px}
-.eyebrow:before{content:"";width:30px;height:1px;background:currentColor}
-.topbar{height:104px;background:var(--navy);position:relative;z-index:20;border-bottom:1px solid rgba(255,255,255,.12)}
-.topbar .wrap{height:100%}
-nav{height:100%;display:flex;align-items:center;justify-content:space-between;gap:28px}
-.logo{width:245px;max-height:76px;object-fit:contain;object-position:left center}
-.links{display:flex;align-items:center;gap:26px;color:rgba(255,255,255,.8);font-size:10px;letter-spacing:.08em;text-transform:uppercase}
-.links a{transition:.2s}.links a:hover{color:#fff}
-.links .contact{border:1px solid rgba(213,157,106,.75);padding:11px 17px;color:#fff}
-.mobile-toggle{display:none;color:#fff;border:1px solid rgba(255,255,255,.22);padding:9px 12px;background:transparent}
-
-.hero{position:relative;min-height:760px;color:#fff;display:flex;align-items:center;overflow:hidden;background:#0a2239}
-.hero-media{position:absolute;inset:0;background:
-  linear-gradient(90deg,rgba(5,20,34,.93) 0%,rgba(5,20,34,.78) 34%,rgba(5,20,34,.30) 67%,rgba(5,20,34,.12) 100%),
-  linear-gradient(0deg,rgba(5,20,34,.42),transparent 38%),
-  url("https://images.pexels.com/photos/19143297/pexels-photo-19143297.jpeg?auto=compress&cs=tinysrgb&w=2400") center/cover no-repeat;
-  transform:scale(1.01)
-}
-.hero:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:rgba(255,255,255,.16)}
-.hero .wrap{position:relative;z-index:2;padding:88px 0}
-.hero-copy{max-width:820px}
-.hero .eyebrow{color:var(--copper2)}
-.hero h1{font-size:clamp(56px,6.3vw,94px);line-height:.98;letter-spacing:-.045em;margin:22px 0 24px}
-.hero-sub{font-size:19px;font-weight:600;margin:0 0 11px;max-width:720px}
-.hero p{color:rgba(255,255,255,.82);font-size:16px;max-width:650px;margin:0}
-.actions{display:flex;gap:13px;flex-wrap:wrap;margin-top:32px}
-.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 20px;border:1px solid rgba(255,255,255,.54);font-size:10px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;transition:.2s}
-.btn:hover{transform:translateY(-1px)}
-.btn.primary{background:var(--copper);border-color:var(--copper);color:#fff}
-.hero-meta{position:absolute;z-index:2;left:0;right:0;bottom:28px}
-.hero-meta .wrap{padding:0;display:flex;gap:24px;align-items:center;color:rgba(255,255,255,.62);font-size:9px;letter-spacing:.16em;text-transform:uppercase}
-.hero-meta i{width:30px;height:1px;background:rgba(213,157,106,.75)}
-
-section{padding:104px 0}
-.section-head{display:grid;grid-template-columns:1.15fr .85fr;gap:80px;align-items:end;margin-bottom:48px}
-h2{font-size:clamp(42px,4.5vw,68px);line-height:1.02;letter-spacing:-.035em;margin:15px 0 0}
-.lead,.section-head p{font-size:16px;color:var(--muted);margin:0}
-.context{background:#fff}
-.context-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:95px;align-items:start}
-.context-copy p{font-size:18px;color:var(--muted);max-width:710px}
-.context-copy b{color:var(--ink)}
-.steps{padding-top:8px}
-.step{display:grid;grid-template-columns:44px 1fr;gap:16px;padding:24px 0;border-top:1px solid var(--line)}
-.step:last-child{border-bottom:1px solid var(--line)}
-.step-num{font-size:10px;color:var(--copper);letter-spacing:.12em;padding-top:6px}
-.step h3{font-size:24px;margin:0 0 5px}
-.step p{font-size:13px;color:var(--muted);margin:0}
-
-.audience{background:var(--stone)}
-.audience-list{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid var(--line)}
-.audience-item{padding:27px 28px 30px 0;margin-right:28px;border-bottom:1px solid var(--line);min-height:160px}
-.audience-item .n{font-size:9px;letter-spacing:.14em;color:var(--copper)}
-.audience-item h3{font-size:22px;line-height:1.08;margin:17px 0 9px}
-.audience-item p{font-size:13px;color:var(--muted);margin:0}
-
-.visual-band{background:var(--navy);padding:0}
-.visual-grid{display:grid;grid-template-columns:1.3fr .7fr;height:520px}
-.visual-main,.visual-side{position:relative;overflow:hidden}
-.visual-main img,.visual-side img{width:100%;height:100%;object-fit:cover;filter:saturate(.88) contrast(1.03)}
-.visual-main:after,.visual-side:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(8,29,51,.62),transparent 65%)}
-.visual-caption{position:absolute;z-index:2;left:36px;bottom:32px;color:#fff;max-width:520px}
-.visual-caption small{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--copper2)}
-.visual-caption h3{font-size:32px;line-height:1.04;margin:9px 0 0}
-
-.expertise{background:var(--navy);color:#fff}
-.expertise .section-head p{color:rgba(255,255,255,.62)}
-.expertise .eyebrow{color:var(--copper2)}
-.practices{border-top:1px solid rgba(255,255,255,.17)}
-.practice{display:grid;grid-template-columns:90px 1fr 1.15fr;gap:34px;align-items:center;padding:28px 0;border-bottom:1px solid rgba(255,255,255,.15)}
-.practice .num{font-family:Georgia,serif;color:var(--copper2);font-size:30px}
-.practice h3{font-size:29px;line-height:1.08;margin:0}
-.practice p{font-size:13px;color:rgba(255,255,255,.62);margin:0;max-width:520px}
-.practice:hover h3{color:#fff}.practice:hover .num{color:#efb27a}
-.expertise .actions{margin-top:38px}
-
-.how{background:#fff}
-.how-top{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px}
-.how-copy p{font-size:16px;color:var(--muted);max-width:550px}
-.how-copy strong{color:var(--ink)}
-.flow{display:grid;grid-template-columns:repeat(4,1fr);margin-top:64px;border-top:1px solid var(--line)}
-.flow-item{padding:25px 27px 28px 0;margin-right:27px;border-bottom:1px solid var(--line);position:relative}
-.flow-item:after{content:"→";position:absolute;right:-2px;top:24px;color:var(--copper);font-size:19px}
-.flow-item:last-child:after{display:none}
-.flow-item span{font-size:9px;letter-spacing:.14em;color:var(--copper)}
-.flow-item h3{font-size:22px;margin:18px 0 8px}
-.flow-item p{font-size:12.5px;color:var(--muted);margin:0}
-.quote{margin:52px 0 0;padding:23px 0 0;border-top:1px solid var(--line);font-family:Georgia,serif;font-size:clamp(25px,2.6vw,37px);line-height:1.35;color:#34495c;max-width:1080px}
-
-.story-grid{display:grid;grid-template-columns:repeat(3,1fr);height:410px;background:#fff;padding:0}
-.story{position:relative;overflow:hidden}
-.story img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease;filter:saturate(.9)}
-.story:hover img{transform:scale(1.025)}
-.story:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(6,26,44,.73),transparent 60%)}
-.story-copy{position:absolute;z-index:2;left:26px;right:26px;bottom:24px;color:#fff}
-.story-copy small{font-size:9px;letter-spacing:.15em;color:var(--copper2);text-transform:uppercase}
-.story-copy h3{font-size:24px;line-height:1.08;margin:8px 0 0}
-
-.network{background:var(--ivory);padding:0}
-.network-grid{display:grid;grid-template-columns:1fr 1fr;min-height:660px}
-.network-image{position:relative;overflow:hidden}
-.network-image img{width:100%;height:100%;object-fit:cover;filter:saturate(.82)}
-.network-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 65%,rgba(251,249,245,.2))}
-.network-copy{padding:88px clamp(46px,6vw,100px);align-self:center}
-.network-copy p{color:var(--muted);font-size:15px}
-.network-roles{padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:29px 0;color:#4f5d66;font-size:12px;line-height:1.8}
-.network-strong{font-family:Georgia,serif;font-size:24px!important;line-height:1.3;color:var(--ink)!important}
-
-.intelligence{background:var(--stone)}
-.intel-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:86px;align-items:center}
-.intel-copy p{color:var(--muted);font-size:15px}
-.pipeline{background:rgba(255,255,255,.5);border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:32px 0;display:grid;grid-template-columns:repeat(5,1fr);text-align:center}
-.pipeline div{position:relative;font-family:Georgia,serif;font-size:18px}
-.pipeline div:not(:last-child):after{content:"→";position:absolute;right:-7px;color:var(--copper)}
-.crop-intel{margin-top:32px;padding-top:26px;border-top:1px solid var(--line)}
-.crop-intel h3{font-size:27px;margin:0 0 9px}
-.crop-intel p{margin:0}
-
-.why{background:#fff}
-.why-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;margin-top:48px}
-.why-item{padding-top:20px;border-top:1px solid var(--line)}
-.why-item span{font-size:9px;color:var(--copper);letter-spacing:.14em}
-.why-item h3{font-size:21px;line-height:1.1;margin:18px 0 9px}
-.why-item p{font-size:12.5px;color:var(--muted);margin:0}
-
-.partner{padding:0;background:var(--navy2);color:#fff}
-.partner-grid{display:grid;grid-template-columns:.85fr 1.15fr;min-height:560px}
-.partner-image{position:relative;overflow:hidden}
-.partner-image img{width:100%;height:100%;object-fit:cover;filter:saturate(.75) contrast(1.03)}
-.partner-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(13,42,68,.05),rgba(13,42,68,.40))}
-.partner-copy{padding:78px clamp(42px,6vw,96px);align-self:center}
-.partner-copy .eyebrow{color:var(--copper2)}
-.partner-copy p{color:rgba(255,255,255,.68);font-size:15px}
-.partner-copy h2{margin-bottom:27px}
-
-.final{background:linear-gradient(125deg,#06182a,#0d3553);color:#fff;text-align:center}
-.final .wrap{max-width:900px}
-.final .eyebrow{justify-content:center;color:var(--copper2)}.final .eyebrow:before{display:none}
-.final p{color:rgba(255,255,255,.7);font-size:16px;max-width:700px;margin:24px auto 0}
-.final .actions{justify-content:center}
-
-footer{background:#030f1a;color:#fff;padding:54px 0 27px}
-.footer-grid{display:grid;grid-template-columns:1.4fr .6fr;gap:60px}
-.footer-logo{width:205px;margin-bottom:16px}
-footer p,footer a{color:rgba(255,255,255,.55);font-size:12px}
-.footer-tag{font-family:Georgia,serif;color:rgba(255,255,255,.78);font-size:18px;max-width:450px}
-.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:7px 20px;margin-bottom:22px}
-.copyright{border-top:1px solid rgba(255,255,255,.12);margin-top:35px;padding-top:19px;display:flex;justify-content:space-between;color:rgba(255,255,255,.38);font-size:10px}
-
-.reveal{opacity:0;transform:translateY(16px);transition:.7s ease}
-.reveal.show{opacity:1;transform:none}
-
-@media(max-width:980px){
-  .links{display:none}.mobile-toggle{display:block}
-  .section-head,.context-grid,.how-top,.intel-grid,.network-grid,.partner-grid{grid-template-columns:1fr}
-  .section-head{gap:28px}
-  .audience-list{grid-template-columns:repeat(2,1fr)}
-  .practice{grid-template-columns:60px 1fr}.practice p{grid-column:2}
-  .flow{grid-template-columns:repeat(2,1fr)}
-  .story-grid{grid-template-columns:1fr 1fr;height:auto}.story{height:360px}.story:last-child{grid-column:1/-1}
-  .network-image,.partner-image{height:470px}
-  .why-grid{grid-template-columns:repeat(2,1fr)}
-  .visual-grid{grid-template-columns:1fr;height:auto}.visual-main,.visual-side{height:410px}
-}
-@media(max-width:640px){
-  .wrap{width:min(100% - 34px,1220px)}
-  .topbar{height:86px}.logo{width:205px;max-height:64px}
-  .hero{min-height:700px}.hero .wrap{padding:68px 0 95px}.hero h1{font-size:48px}.hero-sub{font-size:16px}.hero p{font-size:14px}
-  section{padding:76px 0}h2{font-size:41px}
-  .audience-list,.flow,.why-grid{grid-template-columns:1fr}
-  .audience-item{margin-right:0}
-  .practice{grid-template-columns:45px 1fr;gap:17px}.practice h3{font-size:24px}
-  .story-grid{grid-template-columns:1fr}.story,.story:last-child{height:330px;grid-column:auto}
-  .visual-main,.visual-side{height:340px}
-  .network-copy,.partner-copy{padding:64px 22px}
-  .network-image,.partner-image{height:360px}
-  .pipeline{grid-template-columns:1fr;gap:18px;text-align:left;padding:25px}
-  .pipeline div:not(:last-child):after{content:"↓";right:0}
-  .footer-grid{grid-template-columns:1fr}.footer-links{grid-template-columns:1fr}.copyright{display:block}.copyright span{display:block;margin-top:8px}
-}
+:root{--navy:#18324A;--navy-deep:#0D1F2D;--blue:#44769D;--sky:#8FC1E3;--ice:#EAF2F7;--silver:#C8DDEB;--paper:#FAFBFB;--warm:#F3F1EC;--white:#FFFFFF;--ink:#203240;--muted:#687985;--line:#D9E2E7}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,Helvetica,sans-serif;line-height:1.55}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}.wrap{width:min(1240px,calc(100% - 64px));margin:auto}h1,h2,h3,.serif{font-family:Georgia,"Times New Roman",serif;font-weight:400}.eyebrow{display:flex;align-items:center;gap:12px;color:var(--blue);font-size:10px;letter-spacing:.19em;text-transform:uppercase;font-weight:700}.eyebrow:before{content:"";width:32px;height:1px;background:currentColor}h2{font-size:clamp(42px,4.4vw,67px);line-height:1.02;letter-spacing:-.035em;margin:15px 0 0}.lead{font-size:17px;color:var(--muted)}.btn{display:inline-flex;align-items:center;gap:10px;padding:15px 20px;border:1px solid var(--navy);font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;transition:.2s;background:transparent}.btn:hover{transform:translateY(-1px)}.btn.primary{background:var(--navy);color:#fff;border-color:var(--navy)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.site-header{background:#fff;border-bottom:1px solid var(--line);position:relative;z-index:30}.site-header .wrap{height:126px;display:flex;align-items:center;justify-content:space-between;gap:28px}.brand-logo{width:116px;height:auto;flex:0 0 auto}.nav-links{display:flex;align-items:center;gap:27px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:#536774}.nav-links a:hover{color:var(--navy)}.nav-links .contact{padding:11px 17px;border:1px solid var(--blue);color:var(--navy)}.mobile-toggle{display:none;border:1px solid var(--line);background:#fff;color:var(--navy);padding:10px 12px;font-size:10px;letter-spacing:.1em}
+.hero{background:var(--warm);display:grid;grid-template-columns:minmax(0,44%) minmax(0,56%);height:min(74vh,760px);min-height:620px;overflow:hidden}.hero-copy{display:flex;align-items:center}.hero-copy-inner{width:min(600px,calc(100% - 76px));margin-left:max(32px,calc((100vw - 1240px)/2))}.hero h1{font-size:clamp(54px,5.4vw,86px);line-height:.97;letter-spacing:-.045em;color:var(--navy);margin:20px 0 25px}.hero-sub{font-size:18px;font-weight:600;color:#39546A;margin-bottom:12px}.hero p{font-size:15px;color:var(--muted);max-width:590px;margin:0}.hero-visual{position:relative;overflow:hidden;background:#dce7eb}.hero-visual img{width:100%;height:100%;object-fit:cover;object-position:center;filter:saturate(1.03) contrast(1.01) brightness(1.04)}.hero-visual:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(243,241,236,.22),transparent 22%)}.hero-label{position:absolute;right:30px;bottom:26px;z-index:2;background:rgba(255,255,255,.92);padding:12px 16px;color:var(--navy);font-size:9px;letter-spacing:.14em;text-transform:uppercase;border:1px solid rgba(255,255,255,.75)}
+section{padding:102px 0}.section-head{display:grid;grid-template-columns:1.15fr .85fr;gap:86px;align-items:end;margin-bottom:48px}.section-head p{color:var(--muted);font-size:16px;margin:0}
+.context{background:#fff}.context-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:90px}.context-copy p{color:var(--muted);font-size:17px;max-width:720px}.context-copy strong{color:var(--ink)}.steps{padding-top:7px}.step{display:grid;grid-template-columns:48px 1fr;gap:16px;border-top:1px solid var(--line);padding:24px 0}.step:last-child{border-bottom:1px solid var(--line)}.step .num{font-size:9px;letter-spacing:.14em;color:var(--blue);padding-top:7px}.step h3{font-size:24px;margin:0 0 6px;color:var(--navy)}.step p{font-size:13px;color:var(--muted);margin:0}
+.audience{background:var(--paper)}.audience-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}.audience-item{padding:28px 28px 30px 0;margin-right:28px;border-bottom:1px solid var(--line);min-height:160px}.audience-item span{font-size:9px;letter-spacing:.14em;color:var(--blue)}.audience-item h3{font-size:22px;line-height:1.08;margin:17px 0 9px;color:var(--navy)}.audience-item p{font-size:13px;color:var(--muted);margin:0}
+.image-trio{padding:0;background:#fff}.image-trio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line)}.image-card{background:#fff}.image-card .photo{aspect-ratio:16/10;overflow:hidden;background:#e8eef1}.image-card img{width:100%;height:100%;object-fit:cover;filter:saturate(1.03) brightness(1.04);transition:transform .55s ease}.image-card:hover img{transform:scale(1.018)}.image-card-copy{padding:25px 28px 30px}.image-card-copy small{font-size:9px;color:var(--blue);letter-spacing:.15em;text-transform:uppercase}.image-card-copy h3{font-size:25px;line-height:1.08;margin:9px 0 8px;color:var(--navy)}.image-card-copy p{font-size:13px;color:var(--muted);margin:0}
+.expertise{background:var(--ice)}.practices{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #cddbe3;border-left:1px solid #cddbe3}.practice{padding:28px 23px 32px;border-right:1px solid #cddbe3;border-bottom:1px solid #cddbe3;background:rgba(255,255,255,.34);min-height:310px}.practice .num{font-family:Georgia,serif;font-size:28px;color:var(--blue)}.practice h3{font-size:23px;line-height:1.08;margin:50px 0 15px;color:var(--navy)}.practice p{font-size:13px;color:var(--muted);margin:0}.practice:hover{background:#fff}
+.how{background:#fff}.how-top{display:grid;grid-template-columns:.9fr 1.1fr;gap:86px}.how-copy p{font-size:16px;color:var(--muted);max-width:560px}.how-copy strong{color:var(--ink)}.flow{display:grid;grid-template-columns:repeat(4,1fr);margin-top:64px;border-top:1px solid var(--line)}.flow-item{padding:26px 26px 28px 0;margin-right:26px;border-bottom:1px solid var(--line);position:relative}.flow-item:after{content:"→";position:absolute;right:-2px;top:25px;color:var(--blue);font-size:18px}.flow-item:last-child:after{display:none}.flow-item span{font-size:9px;letter-spacing:.13em;color:var(--blue)}.flow-item h3{font-size:22px;line-height:1.1;margin:17px 0 8px;color:var(--navy)}.flow-item p{font-size:12.5px;color:var(--muted);margin:0}.quote{font-family:Georgia,serif;font-size:clamp(25px,2.6vw,37px);line-height:1.35;color:#40586A;margin:50px 0 0;padding-top:24px;border-top:1px solid var(--line);max-width:1100px}
+.business-assets{padding:0;background:#fff}.business-grid{display:grid;grid-template-columns:1fr 1fr}.business-block{display:grid;grid-template-columns:1fr;min-height:535px}.business-block .photo{height:350px;overflow:hidden}.business-block img{width:100%;height:100%;object-fit:cover;filter:brightness(1.05) saturate(1.02)}.business-copy{padding:34px 42px 40px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}.business-copy small{font-size:9px;letter-spacing:.14em;color:var(--blue);text-transform:uppercase}.business-copy h3{font-size:29px;margin:10px 0 9px;color:var(--navy)}.business-copy p{font-size:13px;color:var(--muted);margin:0}
+.network{background:var(--paper);padding:0}.network-grid{display:grid;grid-template-columns:1fr 1fr;min-height:640px}.network-image{overflow:hidden;background:#e8eef1}.network-image img{width:100%;height:100%;object-fit:cover;filter:saturate(1.02) brightness(1.05)}.network-copy{padding:84px clamp(46px,6vw,98px);align-self:center}.network-copy p{color:var(--muted);font-size:15px}.network-roles{padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:28px 0;color:#596B78;font-size:12px;line-height:1.8}.network-strong{font-family:Georgia,serif;font-size:24px!important;line-height:1.3;color:var(--navy)!important}
+.intelligence{background:var(--warm)}.intel-grid{display:grid;grid-template-columns:.92fr 1.08fr;gap:90px;align-items:center}.intel-copy p{color:var(--muted);font-size:15px}.pipeline{display:grid;grid-template-columns:repeat(5,1fr);border-top:1px solid #d4d8d9;border-bottom:1px solid #d4d8d9;background:rgba(255,255,255,.48);padding:32px 0;text-align:center}.pipeline div{font-family:Georgia,serif;font-size:18px;color:var(--navy);position:relative}.pipeline div:not(:last-child):after{content:"→";position:absolute;right:-7px;color:var(--blue)}.crop-intel{margin-top:30px;padding-top:24px;border-top:1px solid #d4d8d9}.crop-intel h3{font-size:27px;color:var(--navy);margin:0 0 9px}.crop-intel p{font-size:13px;color:var(--muted);margin:0}
+.why{background:#fff}.why-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:28px;margin-top:46px}.why-item{padding-top:20px;border-top:2px solid var(--silver)}.why-item span{font-size:9px;letter-spacing:.14em;color:var(--blue)}.why-item h3{font-size:21px;line-height:1.1;color:var(--navy);margin:17px 0 9px}.why-item p{font-size:12.5px;color:var(--muted);margin:0}
+.partner{background:var(--ice)}.partner-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:80px;align-items:center}.partner-copy p{font-size:15px;color:var(--muted)}.partner-note{padding:24px 26px;background:#fff;border-left:3px solid var(--blue);color:#536A79;font-family:Georgia,serif;font-size:21px;line-height:1.4}
+.final{background:var(--navy);color:#fff;text-align:center}.final .wrap{max-width:920px}.final .eyebrow{justify-content:center;color:var(--sky)}.final .eyebrow:before{display:none}.final h2{color:#fff}.final p{color:rgba(255,255,255,.7);font-size:16px;max-width:690px;margin:24px auto 0}.final .actions{justify-content:center}.final .btn.primary{background:#fff;color:var(--navy);border-color:#fff}
+footer{background:var(--navy-deep);color:#fff;padding:50px 0 26px}.footer-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:60px;align-items:start}.footer-logo{width:105px;height:auto;margin-bottom:16px}footer p,footer a{font-size:12px;color:rgba(255,255,255,.57)}.footer-tag{font-family:Georgia,serif;font-size:18px;line-height:1.35;color:rgba(255,255,255,.8);max-width:430px}.footer-links{display:grid;grid-template-columns:1fr 1fr;gap:7px 18px;margin-bottom:22px}.copyright{display:flex;justify-content:space-between;border-top:1px solid rgba(255,255,255,.12);padding-top:19px;margin-top:34px;font-size:10px;color:rgba(255,255,255,.38)}
+.reveal{opacity:0;transform:translateY(16px);transition:.7s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:1050px){.nav-links{gap:18px}.hero{grid-template-columns:1fr 1fr}.practices{grid-template-columns:repeat(2,1fr)}.practice:last-child{grid-column:1/-1}.section-head,.context-grid,.how-top,.intel-grid,.network-grid,.partner-grid{grid-template-columns:1fr}.section-head{gap:28px}.audience-grid{grid-template-columns:repeat(2,1fr)}.network-image{height:480px}.why-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:820px){.site-header .wrap{height:104px}.brand-logo{width:94px}.mobile-toggle{display:block}.nav-links{display:none;position:absolute;left:0;right:0;top:104px;background:#fff;padding:20px 32px;border-bottom:1px solid var(--line);flex-direction:column;align-items:flex-start;gap:16px}.nav-links.open{display:flex}.hero{display:flex;flex-direction:column;height:auto;min-height:0}.hero-copy{order:2;padding:60px 0}.hero-copy-inner{width:min(100% - 42px,690px);margin:auto}.hero-visual{order:1;aspect-ratio:16/9;min-height:0}.image-trio-grid{grid-template-columns:1fr}.business-grid{grid-template-columns:1fr}.business-copy{border-right:0}.flow{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr}}
+@media(max-width:620px){.wrap{width:min(100% - 34px,1240px)}section{padding:76px 0}h2{font-size:41px}.hero h1{font-size:47px}.hero-copy{padding:52px 0 60px}.hero-sub{font-size:16px}.audience-grid,.flow,.why-grid,.practices{grid-template-columns:1fr}.practice:last-child{grid-column:auto}.audience-item{margin-right:0}.business-block .photo{height:290px}.network-image{height:340px}.network-copy{padding:62px 20px}.pipeline{grid-template-columns:1fr;gap:17px;text-align:left;padding:26px}.pipeline div:not(:last-child):after{content:"↓";right:0}.copyright{display:block}.copyright span{display:block;margin-top:8px}}
 </style>
 </head>
 <body>
-
-<header class="topbar">
-  <div class="wrap">
-    <nav>
-      <a href="#top" aria-label="MEDIALIMEN CONSULTING">
-        <img class="logo" src="assets/medialimen-logo.png" alt="MEDIALIMEN CONSULTING">
-      </a>
-      <div class="links">
-        <a href="#about">About</a>
-        <a href="#expertise">Expertise</a>
-        <a href="#how">How We Work</a>
-        <a href="#network">Network</a>
-        <a href="#partners">Partners</a>
-        <a class="contact" href="mailto:info@medialimenconsulting.com">Contact</a>
-      </div>
-      <button class="mobile-toggle" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')">MENU</button>
-    </nav>
-  </div>
-</header>
-
+<header class="site-header"><div class="wrap">
+<a href="#top" aria-label="MEDIALIMEN CONSULTING"><img class="brand-logo" src="assets/medialimen-logo-exact.jpg" alt="MEDIALIMEN CONSULTING"></a>
+<nav class="nav-links"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#how">How We Work</a><a href="#network">Network</a><a href="#partners">Partners</a><a class="contact" href="mailto:info@medialimenconsulting.com">Contact</a></nav>
+<button class="mobile-toggle" type="button" onclick="document.querySelector('.nav-links').classList.toggle('open')">MENU</button>
+</div></header>
 <main id="top">
-
 <section class="hero">
-  <div class="hero-media" aria-hidden="true"></div>
-  <div class="wrap">
-    <div class="hero-copy">
-      <div class="eyebrow">Agricultural · Livestock · Agribusiness Advisory</div>
-      <h1>Understanding Agriculture.<br>Unlocking Business Potential.</h1>
-      <div class="hero-sub">Agricultural, Livestock &amp; Agribusiness Advisory Services</div>
-      <p>Independent advisory for producers, agricultural companies, management teams and investors facing complex technical, operational and strategic decisions.</p>
-      <div class="actions">
-        <a class="btn primary" href="#expertise">Explore Our Expertise <span>→</span></a>
-        <a class="btn" href="mailto:info@medialimenconsulting.com">Talk to MEDIALIMEN</a>
-      </div>
-    </div>
-  </div>
-  <div class="hero-meta"><div class="wrap"><span>Production</span><i></i><span>Systems</span><i></i><span>Business</span><i></i><span>Investment</span></div></div>
+<div class="hero-copy"><div class="hero-copy-inner"><div class="eyebrow">Agricultural · Livestock · Agribusiness Advisory</div><h1>Understanding Agriculture.<br>Unlocking Business Potential.</h1><div class="hero-sub">Agricultural, Livestock &amp; Agribusiness Advisory Services</div><p>Independent advisory for producers, agricultural companies, management teams and investors facing complex technical, operational and strategic decisions.</p><div class="actions"><a class="btn primary" href="#expertise">Explore Our Expertise <span>→</span></a><a class="btn" href="mailto:info@medialimenconsulting.com">Talk to MEDIALIMEN</a></div></div></div>
+<div class="hero-visual"><img src="https://images.pexels.com/photos/32370506/pexels-photo-32370506.jpeg?auto=compress&cs=tinysrgb&w=2200&h=1240&fit=crop" alt="Large scale agricultural fields viewed from above"><div class="hero-label">Production · Systems · Business · Investment</div></div>
 </section>
-
-<section class="context" id="about">
-  <div class="wrap context-grid reveal">
-    <div class="context-copy">
-      <div class="eyebrow">Why MEDIALIMEN</div>
-      <h2>Agriculture is increasingly complex.<br>The decisions behind it are too.</h2>
-      <p>Production performance, climate, labour, technology, investment, market conditions and operational efficiency are no longer separate conversations.</p>
-      <p><b>They are part of the same system.</b></p>
-      <p>MEDIALIMEN helps decision-makers understand that system before deciding what comes next.</p>
-    </div>
-    <div class="steps">
-      <div class="step"><div class="step-num">01</div><div><h3>Understand</h3><p>Start with operational reality and identify what is actually driving performance.</p></div></div>
-      <div class="step"><div class="step-num">02</div><div><h3>Analyse</h3><p>Connect technical, productive, operational and business implications.</p></div></div>
-      <div class="step"><div class="step-num">03</div><div><h3>Decide</h3><p>Turn understanding into practical recommendations, strategic choices and measurable priorities.</p></div></div>
-    </div>
-  </div>
-</section>
-
-<section class="audience">
-  <div class="wrap reveal">
-    <div class="section-head">
-      <div><div class="eyebrow">Who We Work With</div><h2>Built for those responsible for performance, growth and investment.</h2></div>
-      <p>Different responsibilities create different questions. The common requirement is understanding what is really happening before the next decision.</p>
-    </div>
-    <div class="audience-list">
-      <div class="audience-item"><span class="n">01</span><h3>Agricultural Producers &amp; Farming Groups</h3><p>Performance improvement across crops, farms and production systems.</p></div>
-      <div class="audience-item"><span class="n">02</span><h3>Management &amp; Technical Teams</h3><p>Independent support for complex technical and operational decisions.</p></div>
-      <div class="audience-item"><span class="n">03</span><h3>Agribusiness Companies</h3><p>Strategy, growth, market development and operational transformation.</p></div>
-      <div class="audience-item"><span class="n">04</span><h3>Farm &amp; Project Developers</h3><p>From feasibility and planning to development and operational optimisation.</p></div>
-      <div class="audience-item"><span class="n">05</span><h3>Investors &amp; Asset Managers</h3><p>Technical and operational understanding behind agricultural investment decisions.</p></div>
-      <div class="audience-item"><span class="n">06</span><h3>Owners &amp; Family Businesses</h3><p>Supporting expansion, transformation and long-term value creation.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="visual-band">
-  <div class="visual-grid">
-    <div class="visual-main">
-      <img src="https://images.pexels.com/photos/16678080/pexels-photo-16678080.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Large-scale modern greenhouse production" loading="lazy">
-      <div class="visual-caption"><small>Production at scale</small><h3>Technical understanding begins with the production system itself.</h3></div>
-    </div>
-    <div class="visual-side">
-      <img src="https://images.pexels.com/photos/33787042/pexels-photo-33787042.jpeg?auto=compress&cs=tinysrgb&w=1100" alt="Large cattle herd grazing" loading="lazy">
-      <div class="visual-caption"><small>Livestock systems</small><h3>Performance across different biological and operational realities.</h3></div>
-    </div>
-  </div>
-</section>
-
-<section class="expertise" id="expertise">
-  <div class="wrap reveal">
-    <div class="section-head">
-      <div><div class="eyebrow">Five Practice Areas</div><h2>One firm.<br>Five complementary areas of expertise.</h2></div>
-      <p>Agricultural businesses rarely face challenges that belong to only one discipline.</p>
-    </div>
-    <div class="practices">
-      <div class="practice"><div class="num">01</div><h3>Crop Performance &amp; Productivity</h3><p>Crop performance, production strategy, technical diagnosis and optimisation of crop systems.</p></div>
-      <div class="practice"><div class="num">02</div><h3>Livestock Production &amp; Animal Performance</h3><p>Production systems, animal performance, management and operational improvement.</p></div>
-      <div class="practice"><div class="num">03</div><h3>Production Systems &amp; Farm Development</h3><p>Planning, design, development and optimisation of farms and productive systems.</p></div>
-      <div class="practice"><div class="num">04</div><h3>Agribusiness Strategy &amp; Growth</h3><p>Business strategy, market development, expansion and commercial positioning.</p></div>
-      <div class="practice"><div class="num">05</div><h3>Agricultural Investment, Assets &amp; Transactions</h3><p>Technical due diligence, agricultural assets, investment analysis and transaction support.</p></div>
-    </div>
-    <div class="actions"><a class="btn" href="#how">Explore Our Practice Areas <span>→</span></a></div>
-  </div>
-</section>
-
-<section class="how" id="how">
-  <div class="wrap reveal">
-    <div class="how-top">
-      <div><div class="eyebrow">How We Work</div><h2>From operational reality<br>to strategic understanding.</h2></div>
-      <div class="how-copy"><p>Our role is not to replace management.</p><p><strong>It is to add an independent layer of technical and strategic understanding.</strong></p></div>
-    </div>
-    <div class="flow">
-      <div class="flow-item"><span>01 — FIELD REALITY</span><h3>Start where value is created.</h3><p>Farm, greenhouse, livestock operation, production system or agricultural asset.</p></div>
-      <div class="flow-item"><span>02 — TECHNICAL UNDERSTANDING</span><h3>Understand what drives performance.</h3><p>Biological, productive and operational factors behind results.</p></div>
-      <div class="flow-item"><span>03 — BUSINESS PERSPECTIVE</span><h3>Put technical findings in context.</h3><p>Labour, cost, investment, risk, market conditions and business objectives.</p></div>
-      <div class="flow-item"><span>04 — DECISION</span><h3>Turn insight into action.</h3><p>Practical recommendations, strategic choices and measurable priorities.</p></div>
-    </div>
-    <div class="quote">The field tells us what is happening. Analysis helps us understand why. Business context determines what should happen next.</div>
-  </div>
-</section>
-
-<div class="story-grid">
-  <div class="story">
-    <img src="https://images.pexels.com/photos/31953698/pexels-photo-31953698.jpeg?auto=compress&cs=tinysrgb&w=1300" alt="Tractor working through a large perennial crop plantation" loading="lazy">
-    <div class="story-copy"><small>Farm Development</small><h3>From land and infrastructure to productive agricultural assets.</h3></div>
-  </div>
-  <div class="story">
-    <img src="https://images.pexels.com/photos/2889193/pexels-photo-2889193.jpeg?auto=compress&cs=tinysrgb&w=1300" alt="Modern food processing line" loading="lazy">
-    <div class="story-copy"><small>Agribusiness</small><h3>Production does not end at the farm gate.</h3></div>
-  </div>
-  <div class="story">
-    <img src="https://images.pexels.com/photos/8056305/pexels-photo-8056305.png?auto=compress&cs=tinysrgb&w=1300" alt="Aerial agricultural fields and water infrastructure" loading="lazy">
-    <div class="story-copy"><small>Agricultural Assets</small><h3>Understanding the complete operating system behind an investment.</h3></div>
-  </div>
-</div>
-
-<section class="network" id="network">
-  <div class="network-grid">
-    <div class="network-image">
-      <img src="https://images.pexels.com/photos/5622365/pexels-photo-5622365.jpeg?auto=compress&cs=tinysrgb&w=1500" alt="Agricultural professionals discussing equipment and business plans" loading="lazy">
-    </div>
-    <div class="network-copy reveal">
-      <div class="eyebrow">MEDIALIMEN Expert Network</div>
-      <h2>One firm.<br>Global expertise.</h2>
-      <p>MEDIALIMEN CONSULTING is built around an international network of experienced independent advisors and specialists.</p>
-      <p>Different projects require different expertise. Our role is to bring together the professionals each project requires under one coordinated technical and commercial direction.</p>
-      <div class="network-roles">Crop specialists · Livestock advisors · Farm development experts · Agribusiness strategists · Investment &amp; transaction professionals</div>
-      <p class="network-strong">The client works with one firm.<br>The project accesses the expertise it requires.</p>
-    </div>
-  </div>
-</section>
-
-<section class="intelligence">
-  <div class="wrap intel-grid reveal">
-    <div class="intel-copy">
-      <div class="eyebrow">Advanced Intelligence</div>
-      <h2>When observation<br>is no longer enough.</h2>
-      <p>Some agricultural decisions require deeper analysis.</p>
-      <p>MEDIALIMEN Advanced Intelligence combines technical data, field observations, historical information and analytical models to identify relationships, evaluate scenarios and support more informed decisions.</p>
-    </div>
-    <div>
-      <div class="pipeline"><div>Data</div><div>Analysis</div><div>Modelling</div><div>Scenarios</div><div>Decision</div></div>
-      <div class="crop-intel"><h3>Advanced Crop Intelligence</h3><p>Analytical and predictive frameworks for understanding crop performance, anticipating outcomes and supporting management decisions.</p></div>
-      <div class="actions"><a class="btn primary" href="mailto:info@medialimenconsulting.com?subject=Advanced%20Crop%20Intelligence">Discover Advanced Crop Intelligence</a></div>
-    </div>
-  </div>
-</section>
-
-<section class="why">
-  <div class="wrap reveal">
-    <div class="eyebrow">Our Approach</div>
-    <h2>More than technical advice.</h2>
-    <div class="why-grid">
-      <div class="why-item"><span>01</span><h3>Independent Perspective</h3><p>We are not tied to products, suppliers or technologies.</p></div>
-      <div class="why-item"><span>02</span><h3>Field Experience</h3><p>Our recommendations begin with operational reality.</p></div>
-      <div class="why-item"><span>03</span><h3>Multidisciplinary Thinking</h3><p>Production, business and investment are analysed together when the project requires it.</p></div>
-      <div class="why-item"><span>04</span><h3>Flexible Expertise</h3><p>Specialists are incorporated according to the needs of each engagement.</p></div>
-      <div class="why-item"><span>05</span><h3>International Capability</h3><p>Projects can combine professionals, markets and languages under one advisory platform.</p></div>
-    </div>
-  </div>
-</section>
-
-<section class="partner" id="partners">
-  <div class="partner-grid">
-    <div class="partner-image"><img src="https://images.pexels.com/photos/5622317/pexels-photo-5622317.jpeg?auto=compress&cs=tinysrgb&w=1500" alt="Agricultural business discussion beside farm machinery" loading="lazy"></div>
-    <div class="partner-copy reveal">
-      <div class="eyebrow">Partner With MEDIALIMEN</div>
-      <h2>Independent expertise.<br>Greater reach.</h2>
-      <p>MEDIALIMEN is continuously expanding its international network of experienced advisors and specialists.</p>
-      <p>We work with professionals and specialised advisory offices that want to maintain their independence while accessing broader clients, multidisciplinary projects and an international advisory platform.</p>
-      <div class="actions">
-        <a class="btn primary" href="mailto:info@medialimenconsulting.com?subject=Join%20the%20MEDIALIMEN%20Network">Join the MEDIALIMEN Network</a>
-        <a class="btn" href="mailto:info@medialimenconsulting.com?subject=MEDIALIMEN%20Partnership%20Opportunities">Explore Partnership Opportunities</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="final">
-  <div class="wrap reveal">
-    <div class="eyebrow">Start a Conversation</div>
-    <h2>Complex agricultural decisions<br>deserve a broader perspective.</h2>
-    <p>Whether the challenge is technical, operational, strategic or investment-related, the first step is understanding what is really happening.</p>
-    <div class="actions"><a class="btn primary" href="mailto:info@medialimenconsulting.com">Start a Conversation</a></div>
-  </div>
-</section>
-
+<section class="context" id="about"><div class="wrap context-grid reveal"><div class="context-copy"><div class="eyebrow">Why MEDIALIMEN</div><h2>Agriculture is increasingly complex.<br>The decisions behind it are too.</h2><p>Production performance, climate, labour, technology, investment, market conditions and operational efficiency are no longer separate conversations.</p><p><strong>They are part of the same system.</strong></p><p>MEDIALIMEN helps decision-makers understand that system before deciding what comes next.</p></div><div class="steps"><div class="step"><div class="num">01</div><div><h3>Understand</h3><p>Start with operational reality and identify what is actually driving performance.</p></div></div><div class="step"><div class="num">02</div><div><h3>Analyse</h3><p>Connect technical, productive, operational and business implications.</p></div></div><div class="step"><div class="num">03</div><div><h3>Decide</h3><p>Turn understanding into practical recommendations, strategic choices and measurable priorities.</p></div></div></div></div></section>
+<section class="audience"><div class="wrap reveal"><div class="section-head"><div><div class="eyebrow">Who We Work With</div><h2>Built for those responsible for performance, growth and investment.</h2></div><p>Different responsibilities create different questions. The common requirement is understanding what is really happening before the next decision.</p></div><div class="audience-grid"><div class="audience-item"><span>01</span><h3>Agricultural Producers &amp; Farming Groups</h3><p>Performance improvement across crops, farms and production systems.</p></div><div class="audience-item"><span>02</span><h3>Management &amp; Technical Teams</h3><p>Independent support for complex technical and operational decisions.</p></div><div class="audience-item"><span>03</span><h3>Agribusiness Companies</h3><p>Strategy, growth, market development and operational transformation.</p></div><div class="audience-item"><span>04</span><h3>Farm &amp; Project Developers</h3><p>From feasibility and planning to development and operational optimisation.</p></div><div class="audience-item"><span>05</span><h3>Investors &amp; Asset Managers</h3><p>Technical and operational understanding behind agricultural investment decisions.</p></div><div class="audience-item"><span>06</span><h3>Owners &amp; Family Businesses</h3><p>Supporting expansion, transformation and long-term value creation.</p></div></div></div></section>
+<section class="image-trio"><div class="image-trio-grid">
+<article class="image-card"><div class="photo"><img src="https://images.pexels.com/photos/31111077/pexels-photo-31111077.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1000&fit=crop" alt="Bright modern greenhouse with rows of tomato plants" loading="lazy"></div><div class="image-card-copy"><small>Crop Performance</small><h3>Controlled production at scale.</h3><p>Performance is understood by analysing the production system, not isolated symptoms.</p></div></article>
+<article class="image-card"><div class="photo"><img src="https://images.pexels.com/photos/27037704/pexels-photo-27037704.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1000&fit=crop" alt="Cattle grazing in a bright green pasture" loading="lazy"></div><div class="image-card-copy"><small>Livestock Production</small><h3>Different systems. The same discipline.</h3><p>Biological performance, management and operations are evaluated together.</p></div></article>
+<article class="image-card"><div class="photo"><img src="https://images.pexels.com/photos/34154153/pexels-photo-34154153.jpeg?auto=compress&cs=tinysrgb&w=1600&h=1000&fit=crop" alt="Bright orchard rows extending across a productive landscape" loading="lazy"></div><div class="image-card-copy"><small>Farm Development</small><h3>From land to productive asset.</h3><p>Planning, infrastructure and production architecture determine long-term performance.</p></div></article>
+</div></section>
+<section class="expertise" id="expertise"><div class="wrap reveal"><div class="section-head"><div><div class="eyebrow">Five Practice Areas</div><h2>One firm.<br>Five complementary areas of expertise.</h2></div><p>Agricultural businesses rarely face challenges that belong to only one discipline.</p></div><div class="practices"><div class="practice"><div class="num">01</div><h3>Crop Performance &amp; Productivity</h3><p>Crop performance, production strategy, technical diagnosis and optimisation of crop systems.</p></div><div class="practice"><div class="num">02</div><h3>Livestock Production &amp; Animal Performance</h3><p>Production systems, animal performance, management and operational improvement.</p></div><div class="practice"><div class="num">03</div><h3>Production Systems &amp; Farm Development</h3><p>Planning, design, development and optimisation of farms and productive systems.</p></div><div class="practice"><div class="num">04</div><h3>Agribusiness Strategy &amp; Growth</h3><p>Business strategy, market development, expansion and commercial positioning.</p></div><div class="practice"><div class="num">05</div><h3>Agricultural Investment, Assets &amp; Transactions</h3><p>Technical due diligence, agricultural assets, investment analysis and transaction support.</p></div></div></div></section>
+<section class="how" id="how"><div class="wrap reveal"><div class="how-top"><div><div class="eyebrow">How We Work</div><h2>From operational reality<br>to strategic understanding.</h2></div><div class="how-copy"><p>Our role is not to replace management.</p><p><strong>It is to add an independent layer of technical and strategic understanding.</strong></p></div></div><div class="flow"><div class="flow-item"><span>01 — FIELD REALITY</span><h3>Start where value is created.</h3><p>Farm, greenhouse, livestock operation, production system or agricultural asset.</p></div><div class="flow-item"><span>02 — TECHNICAL UNDERSTANDING</span><h3>Understand what drives performance.</h3><p>Biological, productive and operational factors behind results.</p></div><div class="flow-item"><span>03 — BUSINESS PERSPECTIVE</span><h3>Put technical findings in context.</h3><p>Labour, cost, investment, risk, market conditions and business objectives.</p></div><div class="flow-item"><span>04 — DECISION</span><h3>Turn insight into action.</h3><p>Practical recommendations, strategic choices and measurable priorities.</p></div></div><div class="quote">The field tells us what is happening. Analysis helps us understand why. Business context determines what should happen next.</div></div></section>
+<section class="business-assets"><div class="business-grid"><article class="business-block"><div class="photo"><img src="https://images.pexels.com/photos/2889193/pexels-photo-2889193.jpeg?auto=compress&cs=tinysrgb&w=1800&h=1100&fit=crop" alt="Modern agricultural food processing line" loading="lazy"></div><div class="business-copy"><small>Agribusiness Strategy &amp; Growth</small><h3>Production does not end at the farm gate.</h3><p>Processing, packing, logistics and market structure are part of the agricultural business system.</p></div></article><article class="business-block"><div class="photo"><img src="https://images.pexels.com/photos/34031012/pexels-photo-34031012.jpeg?auto=compress&cs=tinysrgb&w=1800&h=1100&fit=crop" alt="Aerial view of agricultural fields and irrigation infrastructure" loading="lazy"></div><div class="business-copy"><small>Agricultural Investment &amp; Assets</small><h3>Understand the asset behind the numbers.</h3><p>Land, water, infrastructure, production systems and operating performance shape agricultural investment value.</p></div></article></div></section>
+<section class="network" id="network"><div class="network-grid"><div class="network-image"><img src="https://images.pexels.com/photos/5622365/pexels-photo-5622365.jpeg?auto=compress&cs=tinysrgb&w=1700&h=1200&fit=crop" alt="Agricultural professionals discussing business beside farm machinery" loading="lazy"></div><div class="network-copy reveal"><div class="eyebrow">MEDIALIMEN Expert Network</div><h2>One firm.<br>Global expertise.</h2><p>MEDIALIMEN CONSULTING is built around an international network of experienced independent advisors and specialists.</p><p>Different projects require different expertise. Our role is to bring together the professionals each project requires under one coordinated technical and commercial direction.</p><div class="network-roles">Crop specialists · Livestock advisors · Farm development experts · Agribusiness strategists · Investment &amp; transaction professionals</div><p class="network-strong">The client works with one firm.<br>The project accesses the expertise it requires.</p></div></div></section>
+<section class="intelligence"><div class="wrap intel-grid reveal"><div class="intel-copy"><div class="eyebrow">Advanced Intelligence</div><h2>When observation<br>is no longer enough.</h2><p>Some agricultural decisions require deeper analysis.</p><p>MEDIALIMEN Advanced Intelligence combines technical data, field observations, historical information and analytical models to identify relationships, evaluate scenarios and support more informed decisions.</p></div><div><div class="pipeline"><div>Data</div><div>Analysis</div><div>Modelling</div><div>Scenarios</div><div>Decision</div></div><div class="crop-intel"><h3>Advanced Crop Intelligence</h3><p>Analytical and predictive frameworks for understanding crop performance, anticipating outcomes and supporting management decisions.</p></div><div class="actions"><a class="btn primary" href="mailto:info@medialimenconsulting.com?subject=Advanced%20Crop%20Intelligence">Discover Advanced Crop Intelligence</a></div></div></div></section>
+<section class="why"><div class="wrap reveal"><div class="eyebrow">Our Approach</div><h2>More than technical advice.</h2><div class="why-grid"><div class="why-item"><span>01</span><h3>Independent Perspective</h3><p>We are not tied to products, suppliers or technologies.</p></div><div class="why-item"><span>02</span><h3>Field Experience</h3><p>Our recommendations begin with operational reality.</p></div><div class="why-item"><span>03</span><h3>Multidisciplinary Thinking</h3><p>Production, business and investment are analysed together when the project requires it.</p></div><div class="why-item"><span>04</span><h3>Flexible Expertise</h3><p>Specialists are incorporated according to the needs of each engagement.</p></div><div class="why-item"><span>05</span><h3>International Capability</h3><p>Projects can combine professionals, markets and languages under one advisory platform.</p></div></div></div></section>
+<section class="partner" id="partners"><div class="wrap partner-grid reveal"><div><div class="eyebrow">Partner With MEDIALIMEN</div><h2>Independent expertise.<br>Greater reach.</h2><p class="lead">MEDIALIMEN is continuously expanding its international network of experienced advisors and specialists.</p></div><div><p class="lead">We work with professionals and specialised advisory offices that want to maintain their independence while accessing broader clients, multidisciplinary projects and an international advisory platform.</p><div class="partner-note">Agricultural businesses are multidisciplinary. Their advisors should be too.</div><div class="actions"><a class="btn primary" href="mailto:info@medialimenconsulting.com?subject=Join%20the%20MEDIALIMEN%20Network">Join the MEDIALIMEN Network</a><a class="btn" href="mailto:info@medialimenconsulting.com?subject=MEDIALIMEN%20Partnership%20Opportunities">Explore Partnership Opportunities</a></div></div></div></section>
+<section class="final"><div class="wrap reveal"><div class="eyebrow">Start a Conversation</div><h2>Complex agricultural decisions<br>deserve a broader perspective.</h2><p>Whether the challenge is technical, operational, strategic or investment-related, the first step is understanding what is really happening.</p><div class="actions"><a class="btn primary" href="mailto:info@medialimenconsulting.com">Start a Conversation</a></div></div></section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <div class="footer-grid">
-      <div>
-        <img class="footer-logo" src="assets/medialimen-logo.png" alt="MEDIALIMEN CONSULTING">
-        <p>Agricultural, Livestock &amp; Agribusiness Advisory Services</p>
-        <div class="footer-tag">Understanding Agriculture. Unlocking Business Potential.</div>
-      </div>
-      <div>
-        <div class="footer-links">
-          <a href="#about">About</a><a href="#expertise">Expertise</a>
-          <a href="#network">Expert Network</a><a href="#partners">Partnership</a>
-          <a href="#how">How We Work</a><a href="mailto:info@medialimenconsulting.com">Contact</a>
-        </div>
-        <p><a href="mailto:info@medialimenconsulting.com">info@medialimenconsulting.com</a><br>Miami · Florida · USA</p>
-      </div>
-    </div>
-    <div class="copyright"><span>© <span id="year"></span> MEDIALIMEN CONSULTING</span><span>Independent Agricultural, Livestock &amp; Agribusiness Advisory</span></div>
-  </div>
-</footer>
-
-<script>
-document.getElementById("year").textContent=new Date().getFullYear();
-const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");observer.unobserve(e.target)}}),{threshold:.08});
-document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));
-</script>
-</body>
-</html>
+<footer><div class="wrap"><div class="footer-grid"><div><img class="footer-logo" src="assets/medialimen-logo-exact.jpg" alt="MEDIALIMEN CONSULTING"><p>Agricultural, Livestock &amp; Agribusiness Advisory Services</p><div class="footer-tag">Understanding Agriculture. Unlocking Business Potential.</div></div><div><div class="footer-links"><a href="#about">About</a><a href="#expertise">Expertise</a><a href="#network">Expert Network</a><a href="#partners">Partnership</a><a href="#how">How We Work</a><a href="mailto:info@medialimenconsulting.com">Contact</a></div><p><a href="mailto:info@medialimenconsulting.com">info@medialimenconsulting.com</a><br>Miami · Florida · USA</p></div></div><div class="copyright"><span>© <span id="year"></span> MEDIALIMEN CONSULTING</span><span>Independent Agricultural, Livestock &amp; Agribusiness Advisory</span></div></div></footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add("show");observer.unobserve(e.target)}}),{threshold:.08});document.querySelectorAll(".reveal").forEach(el=>observer.observe(el));</script>
+</body></html>
